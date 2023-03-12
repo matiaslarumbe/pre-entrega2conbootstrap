@@ -1,0 +1,173 @@
+@import "colores";
+@import "fuentes";
+@import "estructura";
+@import "pie-de-pagina";
+
+
+@media screen and (max-width:1200px){
+    .container-body{
+        flex-wrap: wrap;
+    }
+    .column1{
+        margin-top: 40px;
+    }
+    .column2 {
+        margin-top: 40px;
+    }
+    .column3 {
+        margin-top: 40px; 
+    }
+   .row-featurette{
+    float: none;
+    width: 100%;
+   }
+   .header{
+    width: 100px;
+    float: none;
+   }
+   nav a{
+    float: none;
+    width: 100%;
+   }
+   
+}
+
+
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 300px) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 300px) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 300px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    height: 3rem;
+    background-color: $negro3;
+    border: solid $negro4;
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em $negro3, inset 0 .125em .5em $negro4;
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+    .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+
+  /* GLOBAL STYLES
+-------------------------------------------------- */
+
+  
+  /* Featurettes
+  ------------------------- */
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 300px) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+
+  /* footer */
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    height: 3rem;
+    background-color: $negro3;
+    border: solid $negro4;
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em $negro3, inset 0 .125em .5em $negro4;
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  

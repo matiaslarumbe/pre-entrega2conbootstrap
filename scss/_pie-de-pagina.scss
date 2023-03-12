@@ -1,0 +1,133 @@
+#navegador ul {
+    list-style-type: none;
+    text-align:center;
+    overflow:hidden;
+}
+
+#navegador li{
+    display: inline;
+    text-align: center;
+    margin: 0 20px 0 0;
+  a {
+      padding: 5px;
+      color: $negro;
+      background-color: $verde2;
+      border: 1px $verde3;
+      text-decoration:none;
+      font-size: 35px;
+      letter-spacing: 5px;
+  }
+}
+
+#navegador a:hover{
+    background-color: $verde4;
+}
+
+footer{
+    background: $verde5;
+    color: $blanco2;
+    margin-top:auto;
+    display: grid;
+    width: 100%;
+}
+
+footer .column2 label:hover{
+    background-color: $verde6;
+}
+footer .column3 label:hover{
+    background-color: $verde6;
+}
+.container-footer-all{
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+}
+.container-body{
+    justify-content: center;
+    display: flex;
+}
+
+.column1 h1{
+    font-size: 22px;
+    display: grid;
+    p {
+      font-size: 14px;
+      color: $blanco2;
+      margin-right: 400px;
+      display: grid;
+    }    
+}
+
+.column2{
+    max-width: 400px;
+    h1 {
+      font-size: 22px;
+      margin-right: 400px;
+   }
+}
+.row{
+    margin-top: 20px;
+    display: flex;
+    img {
+      width: 50px;
+      height: 30px;
+      label{
+        margin-top: 10px;
+        margin-left: 20px;
+        color: $blanco2;
+        display: flex;  
+      }
+    }
+}
+.column3{
+    max-width: 400px;
+    h1{
+      font-size: 22px;
+      margin-right: 400px;
+    }
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+    img{
+      width: 36px;
+      height: 36px;
+      label{
+        margin-top: 10px;
+        margin-left: 20px;
+        max-width: 140px;
+      }
+    }
+}
+
+.container-footer{
+    width: 100%;
+    background: $verde7;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: $blanco2;
+    font-weight: bold;
+}
+.Informacion a{
+    color: $blanco;
+    text-decoration: none; 
+}
+  
+nav ul li:hover{
+    background-color: $verde8 ;
+  
+}

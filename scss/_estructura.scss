@@ -1,0 +1,100 @@
+
+body{
+    background-color: $verde1;
+}
+header{
+    grid-area: header;
+}
+.div-img{
+    display: flex;
+    justify-content: center;    
+}
+
+p{
+    font-style: $fuentes2;
+    font-size: 20px;
+}
+
+
+div.text-end{
+    font-size: 20px;
+    padding-right: 10px;
+    color: $blanco;
+}
+h1{
+    font-family: $fuentes;
+    font-size: 70px;
+}
+h2{
+    font-family: $fuentes;
+    text-align: center;
+    font-size: 50px;
+}
+h3{
+    font-family: $fuentes;
+    font-size: 25px; }
+ 
+ul {
+    font-family: $fuentes;
+    font-size: 25px;
+}
+
+.row-featurette {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.row3{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    img{
+      width: 140px;
+      height: 140px;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+  } 
+} 
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: $negro2 ;
+  }
+  .carousel {
+    margin-bottom: 4rem;
+    caption {
+      bottom: 3rem;
+      z-index: 10;
+      item {
+        height: 32rem;
+      }
+    }
+  }
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    box-sizing: border-box;
+    img{
+        transition: width 2s, height 4s;
+        width: 160px;
+        height: 140px;
+    }
+    :hover{
+        width: 220px;
+        height: 180px;
+    }
+    p {
+      margin-right: 10px;
+      display:flex;
+      justify-content:center;  
+    }  
+   
+  }
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
