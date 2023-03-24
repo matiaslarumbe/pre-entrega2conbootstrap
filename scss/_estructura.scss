@@ -78,15 +78,7 @@ body {
     margin-bottom: 1.5rem;
     text-align: center;
     box-sizing: border-box;
-    img{
-        transition: width 2s, height 4s;
-        width: 160px;
-        height: 140px;
-    }
-    :hover{
-        width: 220px;
-        height: 180px;
-    }
+   
     p {
       margin-right: 10px;
       display:flex;
