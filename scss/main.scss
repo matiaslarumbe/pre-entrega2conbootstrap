@@ -31,15 +31,16 @@
     float: none;
     width: 100%;
    }
+   section {
+    float: none;
+    width: 100%;
+    font-size: 50px;
+   }
+   
    
 }
 
   
-  @media (min-width: 320px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-  }
 
   .b-example-divider {
     height: 3rem;
@@ -83,6 +84,7 @@
   
   @media (min-width: 40em) {
     /* Bump up size of carousel content */
+    // letras de arriba de las imagenes
     .carousel-caption p {
       margin-bottom: 1.25rem;
       font-size: 1.25rem;
@@ -101,16 +103,41 @@
   }
 
 
-  .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
 
-  @media (min-width: 950px) {
+  @media (min-width: 768px) {
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
     }
   }
+
+  // videos del inicio
+  @media (min-width: 320px) {
+        iframe{
+          width: 280px;
+          height: 200px;
+        }
+  }
+  @media (min-width: 1200px) {
+    iframe{
+      width: 450px;
+      height: 350px;
+    }
+}
+
+
+
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}

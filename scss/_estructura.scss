@@ -28,7 +28,7 @@ h1{
 h2{
     font-family: $fuentes;
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
 }
 section{
   display: grid;
@@ -51,20 +51,22 @@ ul {
     position: relative;
     overflow: hidden;
     width: 100%;
-    .inframe{
-      position: absolute;
-      overflow: hidden;
-      width: 100%;
-      padding-top: 56.26%;
-     }
-     .iframe{
+    .container{
       position: relative;
+      overflow: hidden;
+      height: 0;
+      padding-bottom: 56.25%;
+      
+     }
+     .responsive-iframe {
+      position: absolute;
       top: 0;
       left: 0%;
       bottom: 0;
       right: 0;
-      width: 40%;
-      height: 40%;
+      width: 50%;
+      height: 50%;
+      
      }
 }
 .row3{

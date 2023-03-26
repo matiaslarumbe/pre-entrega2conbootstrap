@@ -31,7 +31,7 @@ h1 {
 h2 {
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   text-align: center;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 section {
@@ -56,20 +56,20 @@ ul {
   overflow: hidden;
   width: 100%;
 }
-.row-featurette .inframe {
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.26%;
-}
-.row-featurette .iframe {
+.row-featurette .container {
   position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.row-featurette .responsive-iframe {
+  position: absolute;
   top: 0;
   left: 0%;
   bottom: 0;
   right: 0;
-  width: 40%;
-  height: 40%;
+  width: 50%;
+  height: 50%;
 }
 
 .row3 {
@@ -279,14 +279,19 @@ nav ul li:hover {
 }
 
 .div-img {
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: auto;
-  height: 400px;
-  width: 600px;
+  margin: auto;
+  height: 50%;
+  width: 50%;
 }
 
+@media only screen and (max-width: 480px) {
+  img {
+    width: 150%;
+  }
+}
 @media screen and (max-width: 1100px) {
   .container-body {
     flex-wrap: wrap;
@@ -312,10 +317,10 @@ nav ul li:hover {
     float: none;
     width: 100%;
   }
-}
-@media (min-width: 320px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
+  section {
+    float: none;
+    width: 100%;
+    font-size: 50px;
   }
 }
 .b-example-divider {
@@ -372,18 +377,37 @@ nav ul li:hover {
     margin-top: 7rem;
   }
 }
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-@media (min-width: 950px) {
+@media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+}
+@media (min-width: 320px) {
+  iframe {
+    width: 280px;
+    height: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  iframe {
+    width: 450px;
+    height: 350px;
+  }
+}
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
 }
 
 /*# sourceMappingURL=main.css.map */
