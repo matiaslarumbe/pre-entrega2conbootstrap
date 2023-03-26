@@ -34,6 +34,10 @@ h2 {
   font-size: 50px;
 }
 
+section {
+  display: grid;
+}
+
 h3 {
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   font-size: 25px;
@@ -51,6 +55,21 @@ ul {
   position: relative;
   overflow: hidden;
   width: 100%;
+}
+.row-featurette .inframe {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.26%;
+}
+.row-featurette .iframe {
+  position: relative;
+  top: 0;
+  left: 0%;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  height: 40%;
 }
 
 .row3 {
@@ -93,11 +112,34 @@ body {
   display: flex;
   justify-content: center;
 }
+.marketing .col-lg-4 img {
+  width: 200px;
+  height: 150px;
+  transition: width 2s, height 3s;
+}
+.marketing .col-lg-4 img:hover {
+  width: 300px;
+  height: 220px;
+}
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
+.navbar-brand {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #navegador ul {
   list-style-type: none;
   text-align: center;
@@ -124,11 +166,10 @@ body {
 }
 
 footer {
+  width: 100%;
   background: rgb(26, 201, 84);
   color: azure;
   margin-top: auto;
-  display: grid;
-  width: 100%;
 }
 
 footer .column2 label:hover {
@@ -157,7 +198,7 @@ footer .column3 label:hover {
 .column1 h1 p {
   font-size: 14px;
   color: azure;
-  margin-right: 400px;
+  margin-right: 200px;
   display: grid;
 }
 
@@ -219,7 +260,7 @@ footer .column3 label:hover {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 40px;
 }
 
 .copyright a {
@@ -238,20 +279,20 @@ nav ul li:hover {
 }
 
 .div-img {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin-top: auto;
   height: 400px;
   width: 600px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
   .container-body {
     flex-wrap: wrap;
   }
   .column1 {
-    margin-top: 40px;
+    max-width: 100%;
   }
   .column2 {
     margin-top: 40px;
@@ -272,33 +313,7 @@ nav ul li:hover {
     width: 100%;
   }
 }
-/* RESPONSIVE CSS
--------------------------------------------------- */
-@media (min-width: 300px) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-@media (min-width: 300px) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-@media (min-width: 300px) {
+@media (min-width: 320px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
@@ -339,13 +354,9 @@ nav ul li:hover {
   -webkit-overflow-scrolling: touch;
 }
 
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Featurettes
-------------------------- */
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-@media (min-width: 300px) {
+@media (min-width: 40em) {
   /* Bump up size of carousel content */
   .carousel-caption p {
     margin-bottom: 1.25rem;
@@ -361,7 +372,6 @@ nav ul li:hover {
     margin-top: 7rem;
   }
 }
-/* footer */
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -370,28 +380,10 @@ nav ul li:hover {
   user-select: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 950px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
-}
-.b-example-divider {
-  height: 3rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: solid rgba(0, 0, 0, 0.15);
-  border-width: 1px 0;
-  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-}
-
-.b-example-vr {
-  flex-shrink: 0;
-  width: 1.5rem;
-  height: 100vh;
-}
-
-.bi {
-  vertical-align: -0.125em;
-  fill: currentColor;
 }
 
 /*# sourceMappingURL=main.css.map */

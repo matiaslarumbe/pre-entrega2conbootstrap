@@ -24,11 +24,11 @@
 }
 
 footer{
+    width: 100%;
     background: $verde5;
     color: $blanco2;
     margin-top:auto;
-    display: grid;
-    width: 100%;
+    
 }
 
 footer .column2 label:hover{
@@ -53,7 +53,7 @@ footer .column3 label:hover{
     p {
       font-size: 14px;
       color: $blanco2;
-      margin-right: 400px;
+      margin-right: 200px;
       display: grid;
     }    
 }
@@ -114,7 +114,7 @@ footer .column3 label:hover{
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 40px;
 }
 
 .copyright a{
