@@ -1,0 +1,78 @@
+// footer
+@media screen and (max-width:1100px){
+    .container-body{
+        flex-wrap:wrap;
+    }
+    .column1{
+        max-width: 100%;
+    }
+    .column2 {
+        margin-top: 40px;
+    }
+    .column3 {
+        margin-top: 40px; 
+    }
+    // body
+   .row-featurette{
+    float: none;
+    width: 100%;
+   }
+   .header{
+    width: 100px;
+    float: none;
+   }
+   nav a{
+    float: none;
+    width: 100%;
+   }
+   section {
+    float: none;
+    width: 100%;
+    font-size: 50px;
+   }
+   
+   
+}
+
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    // letras de arriba de las imagenes
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  // videos del inicio
+  @media (min-width: 320px) {
+        iframe{
+          width: 280px;
+          height: 200px;
+        }
+  }
+  @media (min-width: 1200px) {
+    iframe{
+      width: 450px;
+      height: 350px;
+    }
+}

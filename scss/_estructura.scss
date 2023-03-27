@@ -106,6 +106,7 @@ body {
       display:flex;
       justify-content:center;  
     } 
+    // transicion de imagen
     img {
       width: 200px;
       height: 150px;
@@ -119,7 +120,7 @@ body {
   .featurette-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
   }
-
+  // animacion
   .navbar-brand{
     animation-duration: 2s;
     animation-name: aparecer;
@@ -134,8 +135,60 @@ body {
       opacity: 1;
     }
  }
-  
+ // imagenes que pasan sola principio de main
 
+/* Clase base del carrusel */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Ya que posicionamos la imagen, necesitamos ayudar con el pie de foto */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declarar alturas debido al posicionamiento del elemento img */
+.carousel-item {
+  height: 32rem;
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: $negro3;
+  border: solid $negro4;
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em $negro3, inset 0 .125em .5em $negro4;
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+  .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+  
   
 
   
