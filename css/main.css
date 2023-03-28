@@ -147,13 +147,13 @@ body {
 
 /* Ya que posicionamos la imagen, necesitamos ayudar con el pie de foto */
 .carousel-caption {
-  bottom: 3rem;
+  bottom: 2rem;
   z-index: 10;
 }
 
 /* Declarar alturas debido al posicionamiento del elemento img */
 .carousel-item {
-  height: 32rem;
+  height: 31rem;
 }
 
 .b-example-divider {
